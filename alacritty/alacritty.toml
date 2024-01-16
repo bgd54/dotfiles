@@ -1,0 +1,20 @@
+import = [
+    "~/.config/alacritty/themes/themes/alacritty_0_12.toml"
+]
+
+shell = { program = "/bin/zsh", args = ["-l"] }
+
+[window]
+padding = { x = 5, y = 5 }
+decorations = "None"
+opacity = 1.0
+blur = true
+startup_mode = "Windowed"
+option_as_alt = "OnlyLeft"
+
+[font]
+# normal = { family = "monospace", style = "Regular" }
+size = 12
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t."

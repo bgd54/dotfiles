@@ -3,3 +3,6 @@
 
 [zsh.variables]
 theme = "avit"
+
+[alacritty.files]
+"alacritty/alacritty.toml" = "~/.config/alacritty/alacritty.toml"
