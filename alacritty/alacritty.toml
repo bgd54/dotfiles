@@ -15,6 +15,5 @@ option_as_alt = "OnlyLeft"
 [font]
 # normal = { family = "monospace", style = "Regular" }
 size = 12
-
-[selection]
-semantic_escape_chars = ",│`|:\"' ()[]{}<>\t."
+[font.normal]
+family = "MesloLGS NF"

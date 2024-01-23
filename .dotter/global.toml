@@ -1,8 +1,7 @@
 [zsh.files]
+"zsh/zprofile" = "~/.zprofile"
 "zsh/zshrc" = "~/.zshrc"
-
-[zsh.variables]
-theme = "avit"
+"zsh/p10k.zsh" = "~/.p10k.zsh"
 
 [alacritty.files]
 "alacritty/alacritty.toml" = "~/.config/alacritty/alacritty.toml"
