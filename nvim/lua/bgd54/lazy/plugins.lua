@@ -1,23 +1,11 @@
 return {
-  -- TODO: LSP
-  -- CHECK: trouble
+  -- TODO: LSP  harpoon2,
+  -- CHECK: trouble, nvimd-dap, nvim-tree?
+  -- 'theprimeagen/harpoon',
 
   "folke/which-key.nvim",
-
-  {
-    'nvim-telescope/telescope.nvim', tag = '0.1.x',
-      dependencies = { 'nvim-lua/plenary.nvim' }
-  },
-  {
-    'nvim-treesitter/nvim-treesitter',
-    build = ":TSUpdate",
-  },
-
   'tpope/vim-commentary',
   'tpope/vim-surround',
-  'theprimeagen/harpoon',
-  'mbbill/undotree',
-  'tpope/vim-fugitive',
   {
     'anuvyklack/pretty-fold.nvim',
     config = function()
@@ -25,10 +13,23 @@ return {
     end
   },
 
-  use {
-      'nvim-lualine/lualine.nvim',
-      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-  }
+  { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {},
+    config = function()
+      require("ibl").setup()
+    end,
+  },
+
+  {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    config = function()
+      require('lualine').setup {
+        options = {
+          theme = 'onedark',
+        },
+      }
+    end,
+  },
 
   -- Colors
   {
