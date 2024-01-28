@@ -1,10 +1,12 @@
 return {
-  -- TODO: LSP  harpoon2,
-  -- CHECK: trouble, nvimd-dap, nvim-tree?
+  -- TODO: LSP  harpoon2
+  -- CHECK: trouble, nvimd-dap, nvim-tree?, onedark
   -- 'theprimeagen/harpoon',
 
   "folke/which-key.nvim",
-  'tpope/vim-commentary',
+  -- "gc" to comment visual regions/lines
+  { 'numToStr/Comment.nvim', opts = {} },
+
   'tpope/vim-surround',
   {
     'anuvyklack/pretty-fold.nvim',
@@ -13,11 +15,7 @@ return {
     end
   },
 
-  { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {},
-    config = function()
-      require("ibl").setup()
-    end,
-  },
+  { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 
   {
     'nvim-lualine/lualine.nvim',
