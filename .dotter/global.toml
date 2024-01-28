@@ -5,3 +5,6 @@
 
 [alacritty.files]
 "alacritty/alacritty.toml" = "~/.config/alacritty/alacritty.toml"
+
+[nvim.files]
+"nvim" = "~/.config/nvim"
