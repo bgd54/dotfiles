@@ -1,5 +1,5 @@
 return {
-    -- TODO: harpoon2, test clangD lsp, ibl setup, comments, which-key
+    -- TODO: test clangD lsp, ibl setup, comments, which-key
     -- CHECK: trouble, nvimd-dap, nvim-tree?, onedark
     -- 'theprimeagen/harpoon',
 
