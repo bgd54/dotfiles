@@ -44,6 +44,8 @@ return {
         end,
     },
 
+    {'dhruvasagar/vim-table-mode'},
+
     -- Colors
     {
         'rose-pine/neovim',
@@ -51,6 +53,10 @@ return {
         config = function()
             vim.cmd('colorscheme rose-pine')
         end
+    },
+    {
+        -- Theme inspired by Atom
+        'navarasu/onedark.nvim',
     },
     'folke/tokyonight.nvim',
 }
