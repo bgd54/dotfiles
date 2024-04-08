@@ -20,7 +20,7 @@ return {
         end,
     },
     -- "gc" to comment visual regions/lines
-    { 'numToStr/Comment.nvim',               opts = {} },
+    { 'numToStr/Comment.nvim',     opts = {} },
 
     'tpope/vim-surround',
     {
@@ -30,21 +30,23 @@ return {
         end
     },
 
-    { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+    {
+        "lukas-reineke/indent-blankline.nvim",
+        main = "ibl",
+        opts = {
+            scope = { enabled = false },
+        }
+    },
 
     {
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true },
         config = function()
-            require('lualine').setup {
-                options = {
-                    theme = 'onedark',
-                },
-            }
+            require('lualine').setup {}
         end,
     },
 
-    {'dhruvasagar/vim-table-mode'},
+    { 'dhruvasagar/vim-table-mode' },
 
     -- Colors
     {
