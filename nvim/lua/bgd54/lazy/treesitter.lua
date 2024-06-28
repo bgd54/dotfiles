@@ -3,6 +3,9 @@ return {
     build = ":TSUpdate",
     dependencies = { 'nvim-treesitter/nvim-treesitter-textobjects', 'nvim-treesitter/nvim-treesitter-context' },
     config = function()
+        require 'treesitter-context'.setup {
+            multiline_threshold = 1, -- Maximum number of lines to show for a single context
+        }
         require('nvim-treesitter.configs').setup({
             -- A list of parser names, or "all"
             ensure_installed = { "vimdoc", "c", "cpp", "cuda", "python", "lua" },
